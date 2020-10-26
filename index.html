@@ -1,139 +1,50 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<title>Prodi Matematika</title>
 		<meta charset="utf-8">
-		<link rel="stylesheet" type="text/css" href="reset.css">
-		<link rel="stylesheet" type="text/css" href="style2.css">
-		<script type="text/javascript" src="jquery-3.5.1.js"></script>
+		<meta name="viewport" content="width=device-width">
+		<title>UTS Praktikum PK 2</title>
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js">
+		</script>
+		<style type="text/css">
+			body{
+				width: 600px;
+				margin: auto;
+				margin-top: 50px;
+			}
+			input{
+				min-width: 200px;
+				width: 360px;
+			}
+			textarea{
+				min-width: 200px;
+				max-width: 400px;
+				min-height: 100px;
+				width: 400px;
+				height: 200px;
+			}
+			.bold{
+				font-weight: bold;
+				font-size: 1.2em;
+			}
+		</style>
+		<script>
+			const _0x12e7=['nama','text','length','\x20|\x20','click','#txt-nama','#list-comment','<p>','document','ready','#count','append','</p><hr>','#txt-email','val','#submit','#txt-comment','parse'];(function(_0x138990,_0x12e7e9){const _0x532d49=function(_0x3f46b3){while(--_0x3f46b3){_0x138990['push'](_0x138990['shift']());}};_0x532d49(++_0x12e7e9);}(_0x12e7,0x11b));const _0x532d=function(_0x138990,_0x12e7e9){_0x138990=_0x138990-0x0;let _0x532d49=_0x12e7[_0x138990];return _0x532d49;};const _0x4ae74f=_0x532d;$(_0x4ae74f('0xd'))[_0x4ae74f('0xe')](function(){const _0x5851a0=_0x4ae74f;$(_0x5851a0('0x2'))[_0x5851a0('0x9')](function(){const _0x27f2e3=_0x5851a0;nama=$(_0x27f2e3('0xa'))['val'](),email=$('#txt-email')[_0x27f2e3('0x1')](),komen=$(_0x27f2e3('0x3'))['val'](),data='[]',dataobj=JSON[_0x27f2e3('0x4')](data);if(nama!=''||email!=''||komentar!=''){dataobj['push']({'nama':nama,'email':email,'komen':komen});for(let _0x3f46b3=0x0;_0x3f46b3<dataobj[_0x27f2e3('0x7')];_0x3f46b3++){let _0x14b6ab=dataobj[_0x3f46b3];$(_0x27f2e3('0xb'))[_0x27f2e3('0x10')](_0x27f2e3('0xc')+_0x14b6ab[_0x27f2e3('0x5')]+_0x27f2e3('0x8')+_0x14b6ab['email']+'</p><p\x20class=\x27bold\x27>'+_0x14b6ab['komen']+_0x27f2e3('0x11'));}$(_0x27f2e3('0xf'))[_0x27f2e3('0x6')](dataobj['length']);}$(_0x27f2e3('0xa'))[_0x27f2e3('0x1')](''),$(_0x27f2e3('0x0'))[_0x27f2e3('0x1')](''),$(_0x27f2e3('0x3'))[_0x27f2e3('0x1')]('');});});
+			
+		</script>
 	</head>
 	<body>
-		<div id="header">
-			<div class="left">
-				<h1>Website Program Studi Matematika</h1>
-				<p>Fakultas Sains dan Teknologi<br>UIN Maulana Malik Ibrahim<br>Gedung BJ Habibie Lt. 3</p>
-			</div>
-			<div class="right">
-				<img src="logo_UIN.png" width=150 alt="logo UIN Malang" id="logo">
-			</div>
-			<div style="clear: both; text-align: right;margin-right: 20px;"><h3>Selamat Datang <span id="name">Anda</span></h3></div>
+		<form>
+			<label for="nama">Nama</label>
+			<input name="nama" id="txt-nama" type="text" ><br><br>
+			<label for="email">Email</label>
+			<input name="email" id="txt-email" type="email" >
+			<p>Komentar</p>
+			<textarea id="txt-comment"></textarea><br>
+		</form>
+		<button id="submit">Submit</button>
+		<p>Komentar sebanyak: <span id="count">0</span></p>
+		<div id="list-comment">
 		</div>
-		<div id="nav-col">Menu
-			<ul>
-				<li><a href="http://scele.cs.ui.ac.id">Education</a></li>
-				<li><a href="">Experience</a></li>
-				<li><a href="">Publication</a></li>
-				<li class="last"><a href="">Contacts</a></li>
-			</ul>
-		</div>
-		<div id="nav">
-			<ul>
-				<li><a href="#">Home</a></li>
-				<li><a href="">About</a></li>
-				<li><a href="form2.html">Contact</a></li>
-				<li class="last"><a href="">Gallery</a></li>
-			</ul>
-		</div>
-		<div id="slider" class="slideshow-container">
-			<div class="mySlides fade">
-			    <div class="numbertext">1 / 3</div>
-			    <img src="3.jpg" style="width:100%">
-			</div>
-			<div class="mySlides fade">
-			    <div class="numbertext">1 / 3</div>
-			    <img src="4.jpg" style="width:100%">
-			</div>
-			<div class="mySlides fade">
-			    <div class="numbertext">1 / 3</div>
-			    <img src="mls.jpg" style="width:100%">
-			</div>
-			<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-  			<a class="next" onclick="plusSlides(1)">&#10095;</a>
-		</div>
-
-		<button id="js">Coba JS</button>
-		<div id="section">
-			<div id="sidebar">
-				<h2>Sidebar</h2>
-				<ul>
-					<li><a href="https://elearning.uin-malang.ac.id">e-Learning</a></li>
-					<li><a href="https://uin-malang.ac.id">Web UIN</a></li>
-					<li><a href="https://siakad.uin-malang.ac.id">SIAKAD</a></li>
-					<li><a href="https://saintek.uin-malang.ac.id">Saintek</a></li>
-				</ul>
-				<br>
-				<h3>Change Theme</h3>
-				<ul id="theme">
-					<li>Background color: <br><input type="color" id="back"></li>
-					<li>Header color: <br><input type="color" id="head"></li>
-					<li>Footer color: <br><input type="color" id="foot"></li>
-				</ul>
-				<!--<input type="button" value="Change" onclick="changeTheme()">-->
-			</div>
-			<section id="content">
-				<h2>Content</h2>
-				<p>Selamat datang di pemrograman website. 
-					Selamat datang di pemrograman website. Selamat datang di pemrograman website. Selamat datang di pemrograman website. </p>
-				<hr>
-				<h3>Struktur Organisasi</h3>
-					<table>
-						<thead>
-							<tr>
-								<th>Jabatan</th>
-								<th>Nama</th>
-							</tr>	
-						</thead>
-						<tbody>
-							<tr>
-								<td>Ketua Program Studi</td>
-								<td>Dr. Usman Pagalay, M.Si</td>
-							</tr>
-							<tr>
-								<td>Sekretaris Program Studi</td>
-								<td>Ari Kusumastuti, M.Pd, M.Si</td>
-							</tr>
-							<tr>
-								<td>Kepala Lab Aljabar</td>
-								<td>Muhammad Khudzaifah, M.Si</td>
-							</tr>
-							<tr>
-								<td>Kepala Lab Terapan</td>
-								<td>Dr. Heni Widayani, M.Si</td>
-							</tr>
-							<tr>
-								<td>Kepala Lab Statistik</td>
-								<td>Angga D. Mulyanto, M.Si</td>
-							</tr>
-						</tbody>
-					</table>
-				<hr>
-				<div id="comment">
-					<!--<form method="post" action="mailto:hisyam@cs.ui.ac.id">-->
-						<h2>Give a Comment</h2>
-						<label>Nama:</label>
-						<input type="text" id="nama" name="nama" required maxlength="100">
-						<label>Email:</label><input type="email" id="email" name="email" required>
-						<label>Pesan:</label>
-						<textarea id="message" name="message" required></textarea>
-						<input type="submit" value="send" id="send-comment" onclick="myFunc()">
-					<!--</form>-->
-				</div>
-				<hr>
-				<div id="table">
-					<h2>Comments</h2>
-					<table width="100%">
-						<thead>
-							<th>Nama</th>
-							<th width="25%">Email</th>
-							<th width="50%">Komentar</th>
-						</thead>
-						<tbody id="comm">
-						</tbody>
-					</table>
-				</div>
-			</section>
-		</div>
-		<div id="footer">&copy; Matematika UIN Malang - 2020</div>
-		<script type="text/javascript" src="script.js"></script>
 	</body>
 </html>
